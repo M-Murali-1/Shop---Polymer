@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - SHOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!--Heading -->
+        <div class="heading">
+            <div class="hamburger-logo" onclick="toggleMenu()">
+                <img src="menu.png" alt="navigational menu" class="nav-bar">
+            </div>
+            <div class="shop"><a href="home.html">SHOP</a></div>
+            <div class="cart-logo">
+                <img src="grocery-store.png" alt="" class="cart-logo">
+            </div>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="mens_outerware.html">
+                <p class="men-out">Men's Outerwear</p>
+            </a>
+            <a href="womens-outerwear.html">
+                <p class="ladies-out">Ladies Outerwear</p>
+            </a>
+            <a href="mens_tshirts_page.html">
+                <p class="men-tshirt">Men's T-Shirts</p>
+            </a>
+            <a href="ladies_tshirts_page.html">
+                <p class="ladies-tshirt">Ladies T-Shirts</p>
+            </a>
+        </div>
+        <!-- Printing Heading -->
+        <div class="styling-page checkout-heading">
+            <p>Checkout</p>
+            <p class="items-count">Shop is a demo app - form data will not be sent</p>
+        </div>
+
+        <!-- Code for list items -->
+
+        <div class="checkout-flex">
+            <div class="account-information checkout-cards">
+                <div class="heading-flex">
+                    <p>Account Information</p>
+                </div>
+                <div class="display-area">
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">Email</label>
+                    </div>
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class="heading-flex">
+                    <p>Shipping Address</p>
+                </div>
+                <div class="display-area">
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">Address</label>
+                    </div>
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">City</label>
+                    </div>
+
+                    <div class="display-area">
+                        <div class="divider">
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <label for="" class="label">State/Provinance</label>
+                            </div>
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <div class="label">ZIP/Postal Code</div>
+                            </div>
+                        </div>
+                    </div>
+               <!-- <div class="sub-heading-flex">
+                        <p>Country</p>
+                        <div class="selecter">
+                            <select name="country" id="country-selector" class="sizedecreaser">
+                                <option value="United States">United States</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+                    </div>-->
+                    <div class="sub-heading-flex">
+                        <p>Country</p>
+                    </div> 
+                    <div class="display-area">
+                        <div class="entryarea">
+                            <select name="country" id="country-selector" class="sizedecreaser selector">
+                                <option value="United States">United States</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+                    </div>
+                       
+                </div>
+            </div>
+
+            <div class="payment-method checkout-cards">
+                <div class="heading-flex">
+                    <p>Payment Method</p>
+                </div>
+                <div class="display-area">
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">Cardholder Name</label>
+                    </div>
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">Card Number</label>
+                    </div>
+                </div>
+                <div class="sub-heading-flex">
+                    <p>Expiry</p>
+                </div>
+                <div class="display-area">
+                    <div class="divider">
+                        <div class="entryarea">
+                            <select name="country" id="country-selector" class="sizedecreaser selector">
+                                <option value="January">Jan</option>
+                                <option value="February">Feb</option>
+                                <option value="March">Mar</option>
+                                <option value="April">Apr</option>
+                                <option value="May">May</option>
+                                <option value="June">Jun</option>
+                                <option value="July">Jul</option>
+                                <option value="August">Aug</option>
+                                <option value="September">Sep</option>
+                                <option value="October">Oct</option>
+                                <option value="November">Nov</option>
+                                <option value="December">Dec</option>
+                        </select>
+                        </div>
+                        <div class="entryarea">
+                            <select name="country" id="country-selector" class="sizedecreaser selector">
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                        </div>
+                        <div class="entryarea sub-division-expiry">
+                            <input type="text" required>
+                            <div class="label">CVV</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-present">
+                    <div class="heading-flex">
+                        <p>Order Summary</p>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-content-name"><p>Men's Tech Shell Full-Zip</p></div>
+                        <div class="item-content-price"><p>$50.20</p></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-content-name"><p>Basic Black T-Shirt</p></div>
+                        <div class="item-content-price"><p>$16.90</p></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-content-name"><p>Ladies Sonoma Hybrid Knit Jacket</p></div>
+                        <div class="item-content-price"><p>$84.85</p></div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-content-name"><p>Ladies Colorblock Wind Jacket</p></div>
+                        <div class="item-content-price"><p>$45.90</p></div>
+                    </div>
+                    <div class="item-content total-calculator">
+                        <div class="item-content-name"><p>Total</p></div>
+                        <div class="item-content-price"><p>$197.85</p></div>
+                    </div>
+                    <div class=" place-order-btn">
+                        <button class="place-order btn">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="footer checkout-footer">
+        <div class="made-by">Made by Polymer</div>
+        <div class="demo">
+            <button class="demo-btn">Demo Only</button>
+        </div>
+    </div>
+    </div>
+    <a href="">
+        <div class="placeorder-mobile-btn btn">
+            PLACE ORDER
+        </div>
+    </a>
+
+    <script src="hamburger.js"></script>
+</body>
+
+</html>

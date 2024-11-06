@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SHOP</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', 'Noto', sans-serif;
+            font-size: 1rem;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            padding: 0 1vw;
+        }
+        .heading {
+            display: flex;
+            justify-content: space-between; /* Align items across the row */
+            align-items: center; /* Center items vertically */
+            padding: 1rem;
+        }
+        .hamburger-logo, .cart-logo {
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+       
+        /* Mobile Navigation Menu - Hidden by default */
+        .mobile-nav {
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            position: absolute;
+            /* Position below the heading */
+            left: 0;
+            height: 100vh;
+            width: 20%;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .mobile-nav p {
+            padding: 1rem 0;            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .nav {
+                display: none; /* Hide desktop nav on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="heading">
+            <div class="hamburger-logo" aria-label="Menu" onclick="toggleMenu()">☰</div>
+            <div class="shop">SHOP</div>
+            <div class="cart-logo" aria-label="Cart">cart</div>
+        </header>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <p class="men-out">Men's Outerwear</p>
+            <p class="ladies-out">Ladies Outerwear</p>
+            <p class="men-tshirt">Men's T-Shirts</p>
+            <p class="ladies-tshirt">Ladies T-Shirts</p>
+        </div>
+
+        <!-- Rest of your content goes here -->
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.getElementById("mobileNav");
+            mobileNav.style.display = (mobileNav.style.display === "none" || mobileNav.style.display === "") ? "flex" : "none";
+        }
+    </script>
+</body>
+</html>
