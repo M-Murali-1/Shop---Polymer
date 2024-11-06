@@ -13,13 +13,16 @@
 
     <div class="container">
         <!--Heading -->
+
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
         <div class="heading">
             <div class="hamburger-logo" onclick="toggleMenu()">
                 <img src="menu.png" alt="navigational menu" class="nav-bar">
             </div>
             <div class="shop"><a href="home.html">SHOP</a></div>
             <div class="cart-logo">
-                <img src="grocery-store.png" alt="" class="cart-logo">
+                <a href="cart_page.html"><img src="grocery-store.png" alt="" class="cart-logo">
+                </a>
             </div>
         </div>
 
@@ -283,7 +286,7 @@
     <div class="footer checkout-footer">
         <div class="made-by">Made by Polymer</div>
         <div class="demo">
-                <button class="demo-btn">Demo Only</button>
+            <button class="demo-btn">Demo Only</button>
         </div>
     </div>
     </div>
@@ -294,9 +297,7 @@
     </a>
 
     <script src="hamburger.js"></script>
-    <script>
 
-    </script>
 </body>
 
 </html>

@@ -488,6 +488,7 @@ input:valid + .label{
 
 }
 
+
 @media only screen and (max-width:767px) {
     img {
         height: 240px;
