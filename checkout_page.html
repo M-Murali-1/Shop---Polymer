@@ -86,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-               <!-- <div class="sub-heading-flex">
+                    <!-- <div class="sub-heading-flex">
                         <p>Country</p>
                         <div class="selecter">
                             <select name="country" id="country-selector" class="sizedecreaser">
@@ -97,7 +97,7 @@
                     </div>-->
                     <div class="sub-heading-flex">
                         <p>Country</p>
-                    </div> 
+                    </div>
                     <div class="display-area">
                         <div class="entryarea">
                             <select name="country" id="country-selector" class="sizedecreaser selector">
@@ -106,8 +106,65 @@
                             </select>
                         </div>
                     </div>
-                       
+
+
+
                 </div>
+                <div class="heading-flex">
+                    <p>Billing Address</p>
+                </div>
+                <div class="checkerbox">
+                    <input type="checkbox" name="Billing-addresss" id="Billing" onclick="diffAddress()">
+                    <label for="Billing" class="Billing-addresss-name">Use different billing address</label>
+                </div>
+                <div class="display-area hidden-items">
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">Address</label>
+                    </div>
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <label for="" class="label">City</label>
+                    </div>
+
+                    <div class="display-area">
+                        <div class="divider">
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <label for="" class="label">State/Provinance</label>
+                            </div>
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <div class="label">ZIP/Postal Code</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="sub-heading-flex">
+                        <p>Country</p>
+                        <div class="selecter">
+                            <select name="country" id="country-selector" class="sizedecreaser">
+                                <option value="United States">United States</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+                    </div>-->
+                    <div class="sub-heading-flex">
+                        <p>Country</p>
+                    </div>
+                    <div class="display-area">
+                        <div class="entryarea">
+                            <select name="country" id="country-selector" class="sizedecreaser selector">
+                                <option value="United States">United States</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
             </div>
 
             <div class="payment-method checkout-cards">
@@ -143,7 +200,7 @@
                                 <option value="October">Oct</option>
                                 <option value="November">Nov</option>
                                 <option value="December">Dec</option>
-                        </select>
+                            </select>
                         </div>
                         <div class="entryarea">
                             <select name="country" id="country-selector" class="sizedecreaser selector">
@@ -171,27 +228,47 @@
                         <p>Order Summary</p>
                     </div>
                     <div class="item-content">
-                        <div class="item-content-name"><p>Men's Tech Shell Full-Zip</p></div>
-                        <div class="item-content-price"><p>$50.20</p></div>
+                        <div class="item-content-name">
+                            <p>Men's Tech Shell Full-Zip</p>
+                        </div>
+                        <div class="item-content-price">
+                            <p>$50.20</p>
+                        </div>
                     </div>
                     <div class="item-content">
-                        <div class="item-content-name"><p>Basic Black T-Shirt</p></div>
-                        <div class="item-content-price"><p>$16.90</p></div>
+                        <div class="item-content-name">
+                            <p>Basic Black T-Shirt</p>
+                        </div>
+                        <div class="item-content-price">
+                            <p>$16.90</p>
+                        </div>
                     </div>
                     <div class="item-content">
-                        <div class="item-content-name"><p>Ladies Sonoma Hybrid Knit Jacket</p></div>
-                        <div class="item-content-price"><p>$84.85</p></div>
+                        <div class="item-content-name">
+                            <p>Ladies Sonoma Hybrid Knit Jacket</p>
+                        </div>
+                        <div class="item-content-price">
+                            <p>$84.85</p>
+                        </div>
                     </div>
                     <div class="item-content">
-                        <div class="item-content-name"><p>Ladies Colorblock Wind Jacket</p></div>
-                        <div class="item-content-price"><p>$45.90</p></div>
+                        <div class="item-content-name">
+                            <p>Ladies Colorblock Wind Jacket</p>
+                        </div>
+                        <div class="item-content-price">
+                            <p>$45.90</p>
+                        </div>
                     </div>
                     <div class="item-content total-calculator">
-                        <div class="item-content-name"><p>Total</p></div>
-                        <div class="item-content-price"><p>$197.85</p></div>
+                        <div class="item-content-name">
+                            <p>Total</p>
+                        </div>
+                        <div class="item-content-price">
+                            <p>$197.85</p>
+                        </div>
                     </div>
                     <div class=" place-order-btn">
-                        <button class="place-order btn">Place Order</button>
+                        <a href="home.html"><button class="place-order btn">Place Order</button></a>
                     </div>
                 </div>
             </div>
@@ -206,17 +283,20 @@
     <div class="footer checkout-footer">
         <div class="made-by">Made by Polymer</div>
         <div class="demo">
-            <button class="demo-btn">Demo Only</button>
+                <button class="demo-btn">Demo Only</button>
         </div>
     </div>
     </div>
-    <a href="">
+    <a href="home.html">
         <div class="placeorder-mobile-btn btn">
             PLACE ORDER
         </div>
     </a>
 
     <script src="hamburger.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>

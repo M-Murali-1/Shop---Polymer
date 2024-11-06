@@ -2,7 +2,8 @@ let isMenuOpen = false;
 
 function toggleMenu() {
     const mobileNav = document.getElementById("mobileNav");
-    
+    const overlay = document.getElementById("overlay");
+    overlay.classList.toggle('active');
     isMenuOpen = !isMenuOpen;
     mobileNav.style.display = isMenuOpen ? "flex" : "none";
     
@@ -21,6 +22,7 @@ function handleOutsideClick(event) {
         toggleMenu(); 
     }
 }
-function goback() {
-    window.history.back();
+function diffAddress() {
+    const address = document.querySelector(".hidden-items");
+    address.classList.toggle('active');
 }

@@ -11,7 +11,7 @@
     flex-direction: column;
     height: 100vh;
     padding: 0 1vw;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .outwear,
@@ -114,7 +114,7 @@ img {
     overflow-y: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
-    z-index: 1001;
+    z-index: 2;
 }
 
 .mobile-nav p {
@@ -177,13 +177,14 @@ a {
     padding-bottom: 1vh;
     border-bottom: 2px solid black;
 }
-.overlay {
+/* .overlay {
     width: 100vw;
     height: 100vh;
     background-color: black;
     opacity: 0.3;
-    background-color: red;
-}
+    background-color: green;
+
+} */
 .single-grid-container {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -378,6 +379,10 @@ select {
     font-size: 0.8rem;
     font-weight: 700;
 }
+.sub-division-expiry {
+    position: absolute;
+    top: 20%;
+}
 /*Labeling Styles*/
 
 .display-area {
@@ -385,6 +390,9 @@ select {
 }
 .divider {
     display: flex;
+    align-content: center;
+    position: relative;
+
     flex-direction: row;
     column-gap: 3%;
     .entryarea {
@@ -399,17 +407,31 @@ select {
     padding-bottom:10vh;
     
 }
-input,#country-selector {
+.selector {
+    margin-top: 1.5vh;
+    padding-top: 1.5vh;
+}
+input:not(#Billing),#country-selector {
     position: absolute;
     width: 100%;
     outline: none;
     border: none;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
     font-size: 1rem;
     line-height: 40px;
     background: transparent;
     transition: 0.1s ease;
-    z-index: 1111;
+    /* z-index: 1111; */
+}
+.Billing-addresss-name {
+    font-size: 0.8rem;
+
+}
+.hidden-items {
+    display: none;
+}
+#Billing:checked + .hidden-items {
+    display: block; /* Or `flex`, depending on your layout */
 }
 .sizedecreaser {
    width: 50%;
@@ -423,17 +445,16 @@ input,#country-selector {
 }
 input:focus ,
 input:valid {
-    border-bottom: 4px solid red;
+    border-bottom: 2px solid black;
     transition: 0.2s ease;
 }
 input:focus + .label,
 input:valid + .label{
-   color: red;
    font-size: 0.8rem;
    height: 30px;
    line-height: 30px;
    transform: translateY(-1rem);
-   z-index: 1110;
+   /* z-index: 1110; */
 }
 .sub-heading-flex {
     font-size: 0.8rem;
@@ -443,6 +464,28 @@ input:valid + .label{
     .btn {
         font-size: 0.8rem;
     }
+}
+.placeorder-mobile-btn {
+    display: none;
+}
+.hidden-items.active {
+    display: block;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+    z-index: 1;
+}
+.overlay.active {
+    display: block;
+    
+
 }
 
 @media only screen and (max-width:767px) {
@@ -564,6 +607,9 @@ input:valid + .label{
         .checkout-cards {
             width: 100%;
         }
+    }
+    .payment-method,.cart-container {
+        margin-bottom: 10vh;
     }
 
 }
