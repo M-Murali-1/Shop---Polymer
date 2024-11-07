@@ -523,7 +523,6 @@ input:valid + .label{
 
     .container {
         padding: 0;
-        margin-bottom: 1rem;
     }
 
     .nav-bar {
@@ -612,8 +611,9 @@ input:valid + .label{
         position: fixed;
         bottom: 0;
         width: 100%;
-        padding: 20px;
-        background-color: #0a1831;
+        padding: 22px;
+        font-size: 1rem;
+        background-color: #172c50;
         text-align: center;
         color: white;
         
