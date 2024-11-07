@@ -607,6 +607,7 @@ input:valid + .label{
         color: white;
         
     }
+    
     .checkout-flex {
         flex-direction: column;
         width: 100%;
@@ -614,7 +615,7 @@ input:valid + .label{
             width: 100%;
         }
     }
-    .payment-method,.cart-container {
+    .payment-method,.cart-container,.item-container {
         margin-bottom: 10vh;
     }
  .cart-footer,.checkout-footer,.place-order-btn ,.add-cart,.item-page-footer{
